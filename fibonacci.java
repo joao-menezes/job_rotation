@@ -9,7 +9,7 @@ public class fibonacci {
         System.out.println("Fibonacci function");
         Scanner sc = new Scanner(System.in);
         int n = 10;
-        int number = 1;
+        int number = 0;
         List<Integer> fibbonaci = new ArrayList<>();
         fibbonaci.add(0);
         fibbonaci.add(1);
@@ -19,6 +19,8 @@ public class fibonacci {
         }
         if (fibbonaci.contains(number)) {
             System.out.println("The number: "+ number +" is in the Fibbonaci sequence");
+        }else{
+            System.out.println("The number: "+ number +" is not in the Fibbonaci sequence");
         }
 
         System.out.println(fibbonaci);
